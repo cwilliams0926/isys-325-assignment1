@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             firstName = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            hoursWorked = new TextBox();
+            lastName = new TextBox();
+            firstNameLabel = new Label();
+            lastNameLabel = new Label();
+            hoursWorkedLabel = new Label();
+            summarizeButton = new Button();
+            clearButton = new Button();
             SuspendLayout();
             // 
             // firstName
@@ -40,27 +45,78 @@
             firstName.Size = new Size(185, 23);
             firstName.TabIndex = 0;
             // 
-            // textBox1
+            // hoursWorked
             // 
-            textBox1.Location = new Point(542, 116);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(185, 23);
-            textBox1.TabIndex = 1;
+            hoursWorked.Location = new Point(542, 116);
+            hoursWorked.Name = "hoursWorked";
+            hoursWorked.Size = new Size(185, 23);
+            hoursWorked.TabIndex = 1;
             // 
-            // textBox2
+            // lastName
             // 
-            textBox2.Location = new Point(298, 116);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(185, 23);
-            textBox2.TabIndex = 2;
+            lastName.Location = new Point(298, 116);
+            lastName.Name = "lastName";
+            lastName.Size = new Size(185, 23);
+            lastName.TabIndex = 2;
+            // 
+            // firstNameLabel
+            // 
+            firstNameLabel.AutoSize = true;
+            firstNameLabel.Location = new Point(61, 98);
+            firstNameLabel.Name = "firstNameLabel";
+            firstNameLabel.Size = new Size(64, 15);
+            firstNameLabel.TabIndex = 3;
+            firstNameLabel.Text = "First Name";
+            firstNameLabel.Click += label1_Click;
+            // 
+            // lastNameLabel
+            // 
+            lastNameLabel.AutoSize = true;
+            lastNameLabel.Location = new Point(298, 98);
+            lastNameLabel.Name = "lastNameLabel";
+            lastNameLabel.Size = new Size(63, 15);
+            lastNameLabel.TabIndex = 4;
+            lastNameLabel.Text = "Last Name";
+            // 
+            // hoursWorkedLabel
+            // 
+            hoursWorkedLabel.AutoSize = true;
+            hoursWorkedLabel.Location = new Point(542, 98);
+            hoursWorkedLabel.Name = "hoursWorkedLabel";
+            hoursWorkedLabel.Size = new Size(83, 15);
+            hoursWorkedLabel.TabIndex = 5;
+            hoursWorkedLabel.Text = "Hours Worked";
+            // 
+            // summarizeButton
+            // 
+            summarizeButton.Location = new Point(61, 202);
+            summarizeButton.Name = "summarizeButton";
+            summarizeButton.Size = new Size(115, 23);
+            summarizeButton.TabIndex = 6;
+            summarizeButton.Text = "Summarize";
+            summarizeButton.UseVisualStyleBackColor = true;
+            // 
+            // clearButton
+            // 
+            clearButton.Location = new Point(182, 202);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(115, 23);
+            clearButton.TabIndex = 7;
+            clearButton.Text = "Clear";
+            clearButton.UseVisualStyleBackColor = true;
             // 
             // Assignment1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(clearButton);
+            Controls.Add(summarizeButton);
+            Controls.Add(hoursWorkedLabel);
+            Controls.Add(lastNameLabel);
+            Controls.Add(firstNameLabel);
+            Controls.Add(lastName);
+            Controls.Add(hoursWorked);
             Controls.Add(firstName);
             Name = "Assignment1";
             Text = "Assignment1";
@@ -71,7 +127,12 @@
         #endregion
 
         private TextBox firstName;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox hoursWorked;
+        private TextBox lastName;
+        private Label firstNameLabel;
+        private Label lastNameLabel;
+        private Label hoursWorkedLabel;
+        private Button summarizeButton;
+        private Button clearButton;
     }
 }
