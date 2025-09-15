@@ -36,6 +36,7 @@
             hoursWorkedLabel = new Label();
             summarizeButton = new Button();
             clearButton = new Button();
+            summaryLabel = new Label();
             SuspendLayout();
             // 
             // firstName
@@ -105,11 +106,22 @@
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = true;
             // 
+            // summaryLabel
+            // 
+            summaryLabel.BorderStyle = BorderStyle.FixedSingle;
+            summaryLabel.Location = new Point(61, 285);
+            summaryLabel.Name = "summaryLabel";
+            summaryLabel.Size = new Size(666, 104);
+            summaryLabel.TabIndex = 8;
+            summaryLabel.TextAlign = ContentAlignment.MiddleCenter;
+            summaryLabel.Click += label1_Click_1;
+            // 
             // Assignment1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(summaryLabel);
             Controls.Add(clearButton);
             Controls.Add(summarizeButton);
             Controls.Add(hoursWorkedLabel);
@@ -134,5 +146,6 @@
         private Label hoursWorkedLabel;
         private Button summarizeButton;
         private Button clearButton;
+        private Label summaryLabel;
     }
 }
