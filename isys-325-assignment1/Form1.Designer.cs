@@ -51,14 +51,14 @@
             hoursWorked.Location = new Point(542, 116);
             hoursWorked.Name = "hoursWorked";
             hoursWorked.Size = new Size(185, 23);
-            hoursWorked.TabIndex = 1;
+            hoursWorked.TabIndex = 2;
             // 
             // lastName
             // 
             lastName.Location = new Point(298, 116);
             lastName.Name = "lastName";
             lastName.Size = new Size(185, 23);
-            lastName.TabIndex = 2;
+            lastName.TabIndex = 1;
             // 
             // firstNameLabel
             // 
