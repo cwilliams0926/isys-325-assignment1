@@ -45,6 +45,7 @@
             firstName.Name = "firstName";
             firstName.Size = new Size(185, 23);
             firstName.TabIndex = 0;
+            firstName.TextChanged += firstName_TextChanged;
             // 
             // hoursWorked
             // 
@@ -52,6 +53,7 @@
             hoursWorked.Name = "hoursWorked";
             hoursWorked.Size = new Size(185, 23);
             hoursWorked.TabIndex = 2;
+            hoursWorked.TextChanged += hoursWorked_TextChanged;
             // 
             // lastName
             // 
@@ -59,6 +61,7 @@
             lastName.Name = "lastName";
             lastName.Size = new Size(185, 23);
             lastName.TabIndex = 1;
+            lastName.TextChanged += lastName_TextChanged;
             // 
             // firstNameLabel
             // 
@@ -96,6 +99,7 @@
             summarizeButton.TabIndex = 6;
             summarizeButton.Text = "&Summarize";
             summarizeButton.UseVisualStyleBackColor = true;
+            summarizeButton.Click += summarizeButton_Click;
             // 
             // clearButton
             // 
@@ -105,6 +109,7 @@
             clearButton.TabIndex = 7;
             clearButton.Text = "&Clear";
             clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // summaryLabel
             // 
