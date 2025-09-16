@@ -66,8 +66,8 @@
             firstNameLabel.Location = new Point(61, 98);
             firstNameLabel.Name = "firstNameLabel";
             firstNameLabel.Size = new Size(64, 15);
-            firstNameLabel.TabIndex = 3;
-            firstNameLabel.Text = "First Name";
+            firstNameLabel.TabIndex = 0;
+            firstNameLabel.Text = "&First Name";
             firstNameLabel.Click += label1_Click;
             // 
             // lastNameLabel
@@ -76,8 +76,8 @@
             lastNameLabel.Location = new Point(298, 98);
             lastNameLabel.Name = "lastNameLabel";
             lastNameLabel.Size = new Size(63, 15);
-            lastNameLabel.TabIndex = 4;
-            lastNameLabel.Text = "Last Name";
+            lastNameLabel.TabIndex = 1;
+            lastNameLabel.Text = "&Last Name";
             // 
             // hoursWorkedLabel
             // 
@@ -85,8 +85,8 @@
             hoursWorkedLabel.Location = new Point(542, 98);
             hoursWorkedLabel.Name = "hoursWorkedLabel";
             hoursWorkedLabel.Size = new Size(83, 15);
-            hoursWorkedLabel.TabIndex = 5;
-            hoursWorkedLabel.Text = "Hours Worked";
+            hoursWorkedLabel.TabIndex = 2;
+            hoursWorkedLabel.Text = "&Hours Worked";
             // 
             // summarizeButton
             // 
@@ -94,7 +94,7 @@
             summarizeButton.Name = "summarizeButton";
             summarizeButton.Size = new Size(115, 23);
             summarizeButton.TabIndex = 6;
-            summarizeButton.Text = "Summarize";
+            summarizeButton.Text = "&Summarize";
             summarizeButton.UseVisualStyleBackColor = true;
             // 
             // clearButton
@@ -103,7 +103,7 @@
             clearButton.Name = "clearButton";
             clearButton.Size = new Size(115, 23);
             clearButton.TabIndex = 7;
-            clearButton.Text = "Clear";
+            clearButton.Text = "&Clear";
             clearButton.UseVisualStyleBackColor = true;
             // 
             // summaryLabel
